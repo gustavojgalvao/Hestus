@@ -1,207 +1,400 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
+  <!-- Meta Tags Essenciais -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/assets/img/icon_logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO -->
+  <meta name="description" content="Hestus AI - Agentes de IA, chatbots e automações personalizadas para pequenas e médias empresas. Reduza custos e aumente produtividade.">
+  <meta name="keywords" content="IA, automação, chatbot, inteligência artificial, agentes IA, automação empresarial">
+  <meta name="author" content="Hestus AI">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hestus AI - Automatize tarefas, escale resultados">
+  <meta property="og:description" content="Agentes de IA e automações sob medida para sua empresa">
+  <meta property="og:image" content="/assets/img/og-image.jpg">
+  <meta property="og:url" content="https://hestusai.com">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hestus AI - Automatize tarefas, escale resultados">
+  <meta name="twitter:description" content="Agentes de IA e automações sob medida para sua empresa">
+  <meta name="twitter:image" content="/assets/img/twitter-image.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icon_logo.png">
+  <link rel="apple-touch-icon" href="/assets/img/icon_logo.png">
+  
+  <!-- Preconnect para Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="assets/style.css">
-  <title>Hestus AI</title>
+  
+  <title>Hestus AI - Automação Inteligente para Empresas</title>
 </head>
 
 <body>
-  <div class="back"></div>
+  <!-- Background Decorativo -->
+  <div class="back" aria-hidden="true"></div>
+
   <!-- ========== HEADER ========== -->
-  <header class="header" id="header">
-    <nav class="nav">
-      <a href="#" class="nav__logo">
-        <img src="/assets/img/icon_logo.png" alt="Logo Hestus">
-        <p>HestusAI</p>
+  <header class="header" id="header" role="banner">
+    <nav class="nav container" role="navigation" aria-label="Navegação principal">
+      <!-- Logo -->
+      <a href="#home" class="nav__logo" aria-label="Hestus AI - Ir para o início">
+        <img src="/assets/img/icon_logo.png" alt="Logo Hestus AI" width="36" height="36">
+        <span>HestusAI</span>
       </a>
 
-      <!-- MENU -->
+      <!-- Menu de Navegação -->
       <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li><a href="#solucoes" class="nav__link"><i class="ri-cpu-line nav__icon"></i> Soluções</a></li>
-          <li><a href="#cases" class="nav__link"><i class="ri-bar-chart-box-line nav__icon"></i> Cases</a></li>
-          <li><a href="#insights" class="nav__link"><i class="ri-lightbulb-line nav__icon"></i> Insights</a></li>
-          <li><a href="#planos" class="nav__link"><i class="ri-rocket-line nav__icon"></i> Orçamentos</a></li>
+        <ul class="nav__list" role="menubar">
+          <li role="none">
+            <a href="#solucoes" class="nav__link" role="menuitem">
+              <i class="ri-cpu-line nav__icon" aria-hidden="true"></i>
+              <span>Soluções</span>
+            </a>
+          </li>
+          <li role="none">
+            <a href="#cases" class="nav__link" role="menuitem">
+              <i class="ri-bar-chart-box-line nav__icon" aria-hidden="true"></i>
+              <span>Cases</span>
+            </a>
+          </li>
+          <li role="none">
+            <a href="#insights" class="nav__link" role="menuitem">
+              <i class="ri-lightbulb-line nav__icon" aria-hidden="true"></i>
+              <span>Insights</span>
+            </a>
+          </li>
+          <li role="none">
+            <a href="#contato" class="nav__link" role="menuitem">
+              <i class="ri-rocket-line nav__icon" aria-hidden="true"></i>
+              <span>Contato</span>
+            </a>
+          </li>
         </ul>
 
-        <div class="nav__close" id="nav-close">
-          <i class="ri-close-large-line"></i>
-        </div>
+        <!-- Botão Fechar Menu Mobile -->
+        <button class="nav__close" id="nav-close" aria-label="Fechar menu">
+          <i class="ri-close-large-line" aria-hidden="true"></i>
+        </button>
       </div>
 
-      <!-- BOTÃO LATERAL -->
-      <a href="#contact" class="nav__button">Agendar Reunião</a>
+      <!-- CTA Principal -->
+      <a href="#contato" class="nav__button button">Agendar Reunião</a>
 
-      <!-- MENU MOBILE -->
-      <div class="nav__toggle" id="nav-toggle">
-        <i class="ri-menu-2-line"></i>
-      </div>
+      <!-- Toggle Menu Mobile -->
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+        <i class="ri-menu-2-line" aria-hidden="true"></i>
+      </button>
     </nav>
   </header>
 
-  <!-- ========== MAIN ========== -->
-  <main class="main">
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="main" id="main" role="main">
 
-    <!-- HERO -->
-    <section class="home section" id="home">
+    <!-- ===== HERO SECTION ===== -->
+    <section class="home section" id="home" aria-labelledby="hero-title">
       <div class="home__container container">
+        <!-- Conteúdo de Texto -->
         <div class="home__data">
-          <div class="home__box">
-            <i class="ri-circle-fill"></i>
-            <p>AUTOMAÇÕES PERSONALIZADAS</p>
+          <div class="home__box" role="status" aria-label="Destaque">
+            <i class="ri-circle-fill" aria-hidden="true"></i>
+            <p>Automações Personalizadas</p>
           </div>
-          <h1 class="home__title">
+          
+          <h1 class="home__title" id="hero-title">
             Automatize <span>tarefas</span>,<br>
             escale <span>resultados</span>.
           </h1>
+          
           <p class="home__description">
-            Agentes de IA, chatbots e automações sob medida que reduzem custos e aumentam a produtividade de pequenas e
-            médias empresas.
+            Agentes de IA, chatbots e automações sob medida que reduzem custos e aumentam a produtividade de pequenas e médias empresas.
           </p>
-          <a href="#planos" class="button">Fale com um Especialista</a>
+          
+          <a href="#contato" class="button" aria-label="Falar com um especialista">
+            Fale com um Especialista
+          </a>
         </div>
 
-        <div class="home__messages">
-          <img src="/assets/img/menssagem_1.png" alt="menssagem_1">
-          <img src="/assets/img/menssagem_2.png" alt="menssagem_2">
-          <img src="/assets/img/menssagem_3.png" alt="menssagem_3">
-          <img src="/assets/img/menssagem_4.png" alt="menssagem_4">
-        </div>
-      </div>
-    </section>
-
-    <section class="highlights section" id="highlights">
-      <div class="container highlights__container">
-        <div class="stat-card">
-          <div class="stat-card__title">IA resolve até</div>
-          <div class="stat-card__value">
-            <span class="stat-card__num">93</span>
-            <span class="stat-card__pct">%</span>
-          </div>
-          <div class="stat-card__subtitle">dos atendimentos</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-card__title">IA aumenta até</div>
-          <div class="stat-card__value">
-            <span class="stat-card__num">35</span>
-            <span class="stat-card__pct">%</span>
-          </div>
-          <div class="stat-card__subtitle">as taxas de conversão</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-card__title">IA economiza até</div>
-          <div class="stat-card__value">
-            <span class="stat-card__num">72</span>
-            <span class="stat-card__pct">%</span>
-          </div>
-          <div class="stat-card__subtitle">nos custos operacionais</div>
+        <!-- Ilustrações de Mensagens -->
+        <div class="home__messages" aria-hidden="true">
+          <img src="/assets/img/menssagem_1.png" alt="" loading="lazy">
+          <img src="/assets/img/menssagem_2.png" alt="" loading="lazy">
+          <img src="/assets/img/menssagem_3.png" alt="" loading="lazy">
+          <img src="/assets/img/menssagem_4.png" alt="" loading="lazy">
         </div>
       </div>
     </section>
 
-    <!-- BENEFÍCIOS -->
-    <section class="about section" id="benefits">
+    <!-- ===== ESTATÍSTICAS / HIGHLIGHTS ===== -->
+    <section class="highlights section" id="highlights" aria-labelledby="highlights-title">
+      <div class="container">
+        <div class="highlights__container">
+          <article class="stat-card">
+            <p class="stat-card__title">IA resolve até</p>
+            <div class="stat-card__value" aria-label="93 porcento">
+              <span class="stat-card__num">93</span>
+              <span class="stat-card__pct" aria-hidden="true">%</span>
+            </div>
+            <p class="stat-card__subtitle">dos atendimentos</p>
+          </article>
+
+          <article class="stat-card">
+            <p class="stat-card__title">IA aumenta até</p>
+            <div class="stat-card__value" aria-label="35 porcento">
+              <span class="stat-card__num">35</span>
+              <span class="stat-card__pct" aria-hidden="true">%</span>
+            </div>
+            <p class="stat-card__subtitle">as taxas de conversão</p>
+          </article>
+
+          <article class="stat-card">
+            <p class="stat-card__title">IA economiza até</p>
+            <div class="stat-card__value" aria-label="72 porcento">
+              <span class="stat-card__num">72</span>
+              <span class="stat-card__pct" aria-hidden="true">%</span>
+            </div>
+            <p class="stat-card__subtitle">nos custos operacionais</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BENEFÍCIOS ===== -->
+    <section class="about section" id="benefits" aria-labelledby="benefits-title">
       <div class="container about__container">
         <div class="about__data">
           <span class="section__subtitle">Por que Hestus AI?</span>
-          <h2 class="section__title">Três razões para evoluir agora</h2>
+          <h2 class="section__title" id="benefits-title">Três razões para evoluir agora</h2>
           <p class="about__description">
-            Automação inteligente, agentes personalizados e crescimento escalável — tudo integrado para impulsionar o
-            desempenho da sua empresa.
+            Automação inteligente, agentes personalizados e crescimento escalável — tudo integrado para impulsionar o desempenho da sua empresa.
           </p>
           <a href="#solucoes" class="button">Conheça as Soluções</a>
         </div>
 
-        <div class="about__images">
-          <img src="assets/img/ai-agent.png" alt="IA em ação" class="about__img-1">
-          <img src="assets/img/automation-flow.png" alt="Fluxo de automação" class="about__img-2">
-          <span class="about__tooltip-1">+ Produtividade</span>
-          <span class="about__tooltip-2">– Custos Operacionais</span>
+        <figure class="about__images">
+          <img src="assets/img/ai-agent.png" alt="Representação visual de agente de IA em ação" class="about__img-1" loading="lazy">
+          <figcaption class="visually-hidden">Ilustração de como nossos agentes de IA funcionam</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== COMO FUNCIONA ===== -->
+    <section class="process section" id="solucoes" aria-labelledby="process-title">
+      <div class="container">
+        <h2 class="section__title" id="process-title">Como Funciona</h2>
+        
+        <div class="process__container">
+          <article class="process__card">
+            <div class="process__number" aria-hidden="true">01</div>
+            <h3 class="process__title">Diagnóstico</h3>
+            <p class="process__description">Analisamos seus processos e identificamos pontos estratégicos de automação.</p>
+          </article>
+
+          <article class="process__card">
+            <div class="process__number" aria-hidden="true">02</div>
+            <h3 class="process__title">Criação da IA</h3>
+            <p class="process__description">Desenvolvemos agentes e fluxos inteligentes totalmente personalizados.</p>
+          </article>
+
+          <article class="process__card">
+            <div class="process__number" aria-hidden="true">03</div>
+            <h3 class="process__title">Monitoramento</h3>
+            <p class="process__description">Acompanhamos e otimizamos continuamente a performance dos sistemas.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- COMO FUNCIONA -->
-    <section class="process section" id="solucoes">
-      <h2 class="section__title">Como Funciona</h2>
-      <div class="container process__container">
-        <div class="process__card">
-          <h3 class="process__title">1. Diagnóstico</h3>
-          <p class="process__subtitle">Analisamos seus processos e pontos de automação.</p>
-        </div>
-
-        <div class="process__card">
-          <h3 class="process__title">2. Criação da IA</h3>
-          <p class="process__subtitle">Desenvolvemos agentes e fluxos inteligentes personalizados.</p>
-        </div>
-
-        <div class="process__card">
-          <h3 class="process__title">3. Monitoramento</h3>
-          <p class="process__subtitle">Acompanhamos e otimizamos continuamente a performance.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CASOS DE SUCESSO -->
-    <section class="cases section" id="cases">
+    <!-- ===== CASOS DE SUCESSO ===== -->
+    <section class="cases section" id="cases" aria-labelledby="cases-title">
       <div class="container cases__container">
-        <h2 class="section__title"><span>Resultados Reais</span></h2>
+        <header class="cases__header">
+          <span class="section__subtitle">Casos de Sucesso</span>
+          <h2 class="section__title" id="cases-title">Resultados <span>Reais</span></h2>
+        </header>
 
         <div class="cases__content">
-          <div class="cases__item">
-            <h3 class="cases__metric">+40% Conversão</h3>
-            <p><b>Cliente:</b> Loja Varejista — Atendimento automatizado</p>
-          </div>
-          <div class="cases__item">
-            <h3 class="cases__metric">–60% Custo Operacional</h3>
-            <p><b>Cliente:</b> Startup SaaS — Fluxos de suporte com IA</p>
+          <article class="cases__item">
+            <div class="cases__metric" aria-label="Aumento de 40% na conversão">+40%</div>
+            <h3 class="cases__type">Conversão</h3>
+            <p class="cases__description">
+              <strong>Cliente:</strong> Loja Varejista<br>
+              <span>Atendimento automatizado via chatbot inteligente</span>
+            </p>
+          </article>
+
+          <article class="cases__item">
+            <div class="cases__metric" aria-label="Redução de 60% no custo operacional">–60%</div>
+            <h3 class="cases__type">Custo Operacional</h3>
+            <p class="cases__description">
+              <strong>Cliente:</strong> Startup SaaS<br>
+              <span>Fluxos de suporte automatizados com IA</span>
+            </p>
+          </article>
+
+          <article class="cases__item">
+            <div class="cases__metric" aria-label="Economia de 50 horas por semana">50h</div>
+            <h3 class="cases__type">Tempo Economizado</h3>
+            <p class="cases__description">
+              <strong>Cliente:</strong> Agência de Marketing<br>
+              <span>Automação de relatórios e análises</span>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INSIGHTS / BLOG ===== -->
+    <section class="insights section" id="insights" aria-labelledby="insights-title">
+      <div class="container">
+        <header class="insights__header">
+          <span class="section__subtitle">Blog</span>
+          <h2 class="section__title" id="insights-title">Últimos Insights</h2>
+        </header>
+
+        <div class="insights__container">
+          <article class="insight__card">
+            <div class="insight__image">
+              <img src="/assets/img/insight-1.jpg" alt="" loading="lazy">
+            </div>
+            <div class="insight__content">
+              <span class="insight__category">Automação</span>
+              <h3 class="insight__title">Como a IA está transformando o atendimento ao cliente</h3>
+              <p class="insight__excerpt">Descubra as principais tendências e cases de sucesso...</p>
+              <a href="#" class="insight__link">Ler mais →</a>
+            </div>
+          </article>
+
+          <article class="insight__card">
+            <div class="insight__image">
+              <img src="/assets/img/insight-2.jpg" alt="" loading="lazy">
+            </div>
+            <div class="insight__content">
+              <span class="insight__category">Tecnologia</span>
+              <h3 class="insight__title">5 processos que você pode automatizar hoje</h3>
+              <p class="insight__excerpt">Identifique oportunidades de automação na sua empresa...</p>
+              <a href="#" class="insight__link">Ler mais →</a>
+            </div>
+          </article>
+
+          <article class="insight__card">
+            <div class="insight__image">
+              <img src="/assets/img/insight-3.jpg" alt="" loading="lazy">
+            </div>
+            <div class="insight__content">
+              <span class="insight__category">Estratégia</span>
+              <h3 class="insight__title">ROI de automações: vale a pena investir?</h3>
+              <p class="insight__excerpt">Análise completa dos benefícios financeiros...</p>
+              <a href="#" class="insight__link">Ler mais →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="cta section" id="contato" aria-labelledby="cta-title">
+      <div class="container cta__container">
+        <div class="cta__content">
+          <h2 class="cta__title" id="cta-title">
+            Descubra o que sua empresa pode <span>automatizar</span>
+          </h2>
+          <p class="cta__description">
+            Agende uma conversa gratuita com nossos especialistas e receba um diagnóstico personalizado.
+          </p>
+          <div class="cta__buttons">
+            <a href="#" class="button button--primary">Agendar Reunião</a>
+            <a href="#solucoes" class="button button--outline">Ver Soluções</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta section" id="contact">
-      <div class="container cta__container">
-        <h2 class="cta__title">Descubra o que sua empresa pode <span>automatizar</span></h2>
-        <a href="#planos" class="button">Comece Agora</a>
-      </div>
-    </section>
   </main>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container footer__container">
-      <a href="#" class="footer__logo">
-        <img src="assets/img/icon_logo.png" alt="Hestus AI">
-        <span>Hestus AI</span>
-      </a>
-
-      <div class="footer__social">
-        <a href="#" target="_blank" class="footer__social-link"><i class="ri-linkedin-box-fill"></i></a>
-        <a href="#" target="_blank" class="footer__social-link"><i class="ri-instagram-fill"></i></a>
-        <a href="#" target="_blank" class="footer__social-link"><i class="ri-twitter-x-fill"></i></a>
+      <!-- Logo e Descrição -->
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo" aria-label="Hestus AI - Ir para o início">
+          <img src="assets/img/icon_logo.png" alt="Logo Hestus AI" width="36" height="36">
+          <span>Hestus AI</span>
+        </a>
+        <p class="footer__description">
+          Automatizando o futuro das empresas com inteligência artificial.
+        </p>
       </div>
 
-      <p class="footer__copy">© 2025 Hestus AI — Todos os direitos reservados</p>
+      <!-- Links Rápidos -->
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <h3 class="footer__nav-title">Links Rápidos</h3>
+        <ul class="footer__nav-list">
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#cases">Cases</a></li>
+          <li><a href="#insights">Insights</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contato -->
+      <div class="footer__contact">
+        <h3 class="footer__contact-title">Contato</h3>
+        <address class="footer__address">
+          <a href="mailto:contato@hestusai.com">contato@hestusai.com</a>
+          <a href="tel:+5511999999999">+55 (11) 99999-9999</a>
+        </address>
+      </div>
+
+      <!-- Redes Sociais -->
+      <div class="footer__social-wrapper">
+        <h3 class="footer__social-title">Redes Sociais</h3>
+        <div class="footer__social">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+            <i class="ri-linkedin-box-fill" aria-hidden="true"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+            <i class="ri-instagram-fill" aria-hidden="true"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Twitter">
+            <i class="ri-twitter-x-fill" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__copy">
+          © 2025 Hestus AI. Todos os direitos reservados.
+        </p>
+        <div class="footer__legal">
+          <a href="/privacidade">Política de Privacidade</a>
+          <a href="/termos">Termos de Uso</a>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <!-- BOTÃO SCROLL UP -->
-  <a href="#" class="scrollup" id="scroll-up">
-    <i class="ri-arrow-up-line"></i>
+  <!-- ===== SCROLL TO TOP BUTTON ===== -->
+  <a href="#home" class="scrollup" id="scroll-up" aria-label="Voltar ao topo">
+    <i class="ri-arrow-up-line" aria-hidden="true"></i>
   </a>
 
-  <script src="assets/scripts/scrollreveal.min.js"></script>
-  <script src="assets/scripts/script.js"></script>
-
+  <!-- ===== SCRIPTS ===== -->
+  <script src="assets/scripts/scrollreveal.min.js" defer></script>
+  <script src="assets/scripts/script.js" defer></script>
 </body>
 
 </html>
