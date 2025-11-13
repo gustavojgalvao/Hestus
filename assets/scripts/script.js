@@ -27,3 +27,5 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(updateCounter);
   });
 });
+
+

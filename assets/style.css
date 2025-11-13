@@ -249,10 +249,9 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--bg-glass);
   border: var(--border-glass);
   border-radius: var(--radius-full);
-  backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(12px) saturate(180%);
   padding: 0 var(--space-md);
   box-shadow: var(--shadow-sm);
 }
